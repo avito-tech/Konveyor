@@ -9,6 +9,8 @@
 # Contents
 
 * [Installation](#installation)
+    * [Gradle](#installation-gradle)
+    * [Maven](#installation-maven)
 * [Structure](#structure)
   * [Item](#item)
   * [ItemView](#itemview)
@@ -21,16 +23,33 @@
 
 # <a name="installation" />Installation
 
-Via Gradle:
+## <a name="installation-gradle" />Gradle
+**Step 1.** Add this in your root build.gradle
+
 ```groovy
-compile ''
+	allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
-or Maven:
+
+**Step 2.** Add the dependency
+```groovy
+	dependencies {
+		compile 'com.avito.konveyor:VERSION'
+	}
+```
+
+If you like to stay on the bleeding edge, or use certain commit for you dependency,
+you can use the short commit hash or `anyBranch-SNAPSHOT` as the version
+
+## <a name="installation-maven" />Maven
 ```xml
 <dependency>
-  <groupId></groupId>
-  <artifactId></artifactId>
-  <version></version>
+  <groupId>com.avito.konveyor</groupId>
+  <artifactId>konveyor</artifactId>
+  <version>VERSION</version>
 </dependency>
 ```
 
