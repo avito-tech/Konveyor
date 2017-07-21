@@ -21,7 +21,7 @@
 
 # <a name="installation" />Installation
 
-Download [the latest JAR][2] or grab via Gradle:
+Via Gradle:
 ```groovy
 compile ''
 ```
