@@ -35,7 +35,7 @@ or Maven:
 ```
 
 # <a name="structure" />Structure
-**konveyor** introduces set of key abstractions to extract knowledge about ids and view types away
+**Konveyor** introduces set of key abstractions to extract knowledge about ids and view types away
 from `RecyclerView.Adapter`, thus, making all of the associated logic easily extensible and testable.
 
 ## <a name="item" />Item
