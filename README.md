@@ -1,6 +1,7 @@
 ## Overview
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Build](https://jitpack.io/v/avito-tech/Konveyor.svg)](https://jitpack.io/#avito-tech/Konveyor)
 
 **Konveyor** is a tiny library which intends to battle `RecyclerView.Adapter` Hell, by introducing "Composition over inheritance"
  approach when dealing with RecyclerView adapters. While making your Adapter related logic testable by
@@ -37,7 +38,7 @@
 **Step 2.** Add the dependency
 ```groovy
 	dependencies {
-		compile 'com.avito.konveyor:konveyor:VERSION'
+	        compile 'com.github.avito-tech:Konveyor:VERSION'
 	}
 ```
 
@@ -46,11 +47,11 @@ you can use the short commit hash or `anyBranch-SNAPSHOT` as the version
 
 ## <a name="installation-maven" />Maven
 ```xml
-<dependency>
-  <groupId>com.avito.konveyor</groupId>
-  <artifactId>konveyor</artifactId>
-  <version>VERSION</version>
-</dependency>
+	<dependency>
+	    <groupId>com.github.avito-tech</groupId>
+	    <artifactId>Konveyor</artifactId>
+	    <version>VERSION</version>
+	</dependency>
 ```
 
 # <a name="structure" />Structure
