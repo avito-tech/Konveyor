@@ -1,0 +1,43 @@
+buildscript {
+    dependencies {
+        classpath dep.androidPlugin
+        classpath dep.kotlinPlugin
+        classpath dep.maven
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+group = 'com.avito.konveyor'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibilityVersion
+        targetCompatibility rootProject.ext.targetCompatibilityVersion
+    }
+
+    lintOptions {
+        textOutput 'stdout'
+        textReport true
+        lintConfig file('lint.xml')
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+    }
+}
+
+dependencies {
+    compile dep.kotlin
+    compile dep.recycler
+
+    testCompile dep.junit
+    testCompile dep.mockito
+    testCompile dep.mockitoKotlin
+    testCompile dep.hamcrest
+    testCompile dep.kotlinReflect
+}

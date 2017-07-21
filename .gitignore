@@ -1,0 +1,22 @@
+# Maven
+target
+pom.xml.*
+release.properties
+coverage.ec
+
+# IntelliJ
+.idea
+*.iml
+*.iws
+*.ipr
+classes
+gen-external-apklibs
+
+.DS_Store
+
+# Gradle
+.gradle
+jniLibs
+build
+local.properties
+reports

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!--We update libraries when thinking that they need to be updated,
+    not right after their release. So, it is definitely informal level.-->
+    <issue id="GradleDependency" severity="informational" />
+</lint>

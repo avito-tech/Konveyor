@@ -1,0 +1,13 @@
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+    repositories {
+        jcenter()
+    }
+
+}
+
+apply from: rootProject.file('dependencies.gradle')
