@@ -37,7 +37,7 @@
 **Step 2.** Add the dependency
 ```groovy
 	dependencies {
-		compile 'com.avito.konveyor:VERSION'
+		compile 'com.avito.konveyor:konveyor:VERSION'
 	}
 ```
 
