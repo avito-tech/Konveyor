@@ -3,9 +3,9 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Build](https://jitpack.io/v/avito-tech/Konveyor.svg)](https://jitpack.io/#avito-tech/Konveyor)
 
-**Konveyor** is a tiny library which intends to battle `RecyclerView.Adapter` Hell, by introducing "Composition over inheritance"
+**Konveyor** is a tiny library which intends to battle `RecyclerView.Adapter` Hell by introducing "Composition over inheritance"
  approach when dealing with RecyclerView adapters. While making your Adapter related logic testable by
- providing abstraction layer over its logic, it'll make you forget all of the ViewType hassle all together. 
+ providing abstraction layer over its logic, it will make you forget all of the ViewType hassle all together. 
 
 # Contents
 
@@ -42,7 +42,7 @@
 	}
 ```
 
-If you like to stay on the bleeding edge, or use certain commit for you dependency,
+If you like to stay on the bleeding edge, or use certain commit as your dependency,
 you can use the short commit hash or `anyBranch-SNAPSHOT` as the version
 
 ## <a name="installation-maven" />Maven
@@ -146,7 +146,7 @@ Current library provides default implementation for this interface - `SimpleAdap
     }
 ```
 
-In most cases your `SimpleRecyclerAdapter`, provided by this library will satisfy your needs.
+In most cases `SimpleRecyclerAdapter`, provided by this library will satisfy your needs.
 
 This way you don't have to think about providing unique `ViewType`s for your data, as `ItemBinder` will handle this for you.
 
