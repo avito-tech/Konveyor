@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView
 
 /**
  * Marker interface that represents an
- * abstractions over [RecyclerView.ViewHolder]
+ * abstraction over [RecyclerView.ViewHolder]
  */
 interface ItemView {
 
