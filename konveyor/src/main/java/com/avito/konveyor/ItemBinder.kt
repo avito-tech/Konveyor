@@ -1,10 +1,13 @@
 package com.avito.konveyor
 
 import android.support.annotation.VisibleForTesting
+import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.avito.konveyor.ItemBinder.Builder
 import com.avito.konveyor.adapter.BaseViewHolder
 import com.avito.konveyor.adapter.EmptyViewHolder
+import com.avito.konveyor.adapter.SimpleRecyclerAdapter
 import com.avito.konveyor.blueprint.Item
 import com.avito.konveyor.blueprint.ItemBlueprint
 import com.avito.konveyor.blueprint.ItemPresenter
@@ -17,6 +20,19 @@ import com.avito.konveyor.validation.ValidationPolicy
 import java.lang.Exception
 import java.lang.IllegalArgumentException
 
+/**
+ * Current implementation binds together all of the abstractions provided by the library.
+ * Usually you'd want to pass same instance of this class to [SimpleRecyclerAdapter] both as
+ * an [ItemPresenter] and as an [ViewTypeProvider]
+ *
+ * You have to register all your with [Builder.registerItem] to form a scope of elements that
+ * you expect to handle in the given [RecyclerView].
+ *
+ * By default current implementation will ignore collisions and unsupported data types.
+ * It is possible to set eager validation with [Builder.setValidationPolicy], so exceptions will
+ * be thrown in these cases, moreover, it is encouraged to do so in debug builds to avoid unexpected
+ * behaviour in production
+ */
 class ItemBinder private constructor(
         private val itemBluePrints: List<ItemBlueprint<*, *>>,
         private val policy: ValidationPolicy) :

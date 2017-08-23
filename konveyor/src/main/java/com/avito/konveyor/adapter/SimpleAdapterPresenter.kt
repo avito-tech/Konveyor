@@ -25,7 +25,7 @@ class SimpleAdapterPresenter(private val viewTypeProvider: ViewTypeProvider,
         return viewTypeProvider.getItemViewType(item)
     }
 
-    override fun getItemId(position: Int) = getItem(position).id.hashCode().toLong()
+    override fun getItemId(position: Int) = getItem(position).id
 
     private fun getItem(position: Int) = dataSource.getItem(position)
 
