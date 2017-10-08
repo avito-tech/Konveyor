@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView
 import com.avito.konveyor.ItemBinder
 import com.avito.konveyor.adapter.SimpleAdapterPresenter
 import com.avito.konveyor.adapter.SimpleRecyclerAdapter
-import com.avito.konveyor.validation.ValidationPolicy
 import com.example.konveyor.items.VerticalSpaceItemDecoration
 import com.example.konveyor.items.article.ArticleBlueprint
 import com.example.konveyor.items.article.ArticlePresenter
@@ -30,10 +29,6 @@ class MainActivity : AppCompatActivity() {
         val binder = ItemBinder.Builder()
                 .registerItem(ArticleBlueprint(ArticlePresenter()))
                 .registerItem(PhotoBlueprint(PhotoPresenter()))
-                .setValidationPolicy(object : ValidationPolicy {
-                    override var validateEagerly = true
-                        get() = true
-                })
                 .build()
 
         val presenter = SimpleAdapterPresenter(binder, binder)
