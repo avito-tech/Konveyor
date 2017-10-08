@@ -38,5 +38,4 @@ interface AdapterPresenter {
      */
     fun onDataSourceChanged(dataSource: DataSource<out Item>)
 
-    fun isEmpty() = getCount() == 0
 }
