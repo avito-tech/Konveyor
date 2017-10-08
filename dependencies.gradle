@@ -6,7 +6,7 @@ ext {
     sourceCompatibilityVersion = JavaVersion.VERSION_1_7
     targetCompatibilityVersion = JavaVersion.VERSION_1_7
     supportVersion = '25.3.1'
-    kotlinVersion = '1.1.4'
+    kotlinVersion = '1.1.51'
 
     dep = [
             kotlin       : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
