@@ -42,7 +42,7 @@ class ItemBinderTest {
                 .registerItem(buildItemBluePrint(isRelevant = true))
                 .build()
 
-        assertThat(itemBinder.getItemViewType(randomItem()), Is(UNSUPPORTED_ITEM))
+        assertThat(itemBinder.getItemViewType(randomItem()), Is(SUPPORTED_ITEM))
     }
 
     @Test(expected = ItemNotSupportedException::class)
