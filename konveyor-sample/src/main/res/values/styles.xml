@@ -6,4 +6,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TitleTextView">
+        <item name="android:layout_marginTop">@dimen/title_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/card_text_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/card_text_horizontal_margin</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
