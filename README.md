@@ -2,6 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Build](https://jitpack.io/v/avito-tech/Konveyor.svg)](https://jitpack.io/#avito-tech/Konveyor)
+[![Build Status](https://travis-ci.org/avito-tech/Konveyor.svg?branch=master)](https://travis-ci.org/avito-tech/Konveyor)
 
 **Konveyor** is a tiny library which intends to battle `RecyclerView.Adapter` Hell by introducing "Composition over inheritance"
  approach when dealing with RecyclerView adapters. While making your Adapter related logic testable by
