@@ -33,12 +33,12 @@ android {
 }
 
 dependencies {
-    compile dep.kotlin
-    compile dep.recycler
+    api dep.kotlin
+    api dep.recycler
 
-    testCompile dep.junit
-    testCompile dep.mockito
-    testCompile dep.mockitoKotlin
-    testCompile dep.hamcrest
-    testCompile dep.kotlinReflect
+    testImplementation dep.junit
+    testImplementation dep.mockito
+    testImplementation dep.mockitoKotlin
+    testImplementation dep.hamcrest
+    testImplementation dep.kotlinReflect
 }
