@@ -1,14 +1,20 @@
 subprojects {
-    buildscript {
-        repositories {
-            google()
-            jcenter()
-        }
-    }
     repositories {
-        google()
         jcenter()
+        google()
     }
 }
 
-apply from: rootProject.file('dependencies.gradle')
+buildscript {
+    apply from: rootProject.file('dependencies.gradle')
+
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath dep.androidPlugin
+        classpath dep.kotlinPlugin
+    }
+}

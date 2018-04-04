@@ -1,13 +1,3 @@
-buildscript {
-    dependencies {
-        classpath dep.androidPlugin
-        classpath dep.kotlinPlugin
-    }
-    repositories {
-        google()
-    }
-}
-
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 

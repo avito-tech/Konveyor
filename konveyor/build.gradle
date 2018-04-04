@@ -1,7 +1,11 @@
 buildscript {
+
+    repositories {
+        jcenter()
+        google()
+    }
+
     dependencies {
-        classpath dep.androidPlugin
-        classpath dep.kotlinPlugin
         classpath dep.maven
     }
 }
