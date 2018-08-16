@@ -144,7 +144,7 @@ class ItemBinderTest {
                 .build()
         val viewGroup = mock<ViewGroup>()
 
-        val createdVh = itemBinder.buildViewHolder(viewGroup, UNSUPPORTED_ITEM, { view })
+        val createdVh = itemBinder.buildViewHolder(viewGroup, UNSUPPORTED_ITEM, { view }) as BaseViewHolder
 
         assertThat(createdVh, instanceOf<EmptyViewHolder>())
     }

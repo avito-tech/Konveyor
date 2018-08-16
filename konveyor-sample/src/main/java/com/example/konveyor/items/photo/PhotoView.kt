@@ -18,7 +18,7 @@ class PhotoViewHolder(view: View) : BaseViewHolder(view), PhotoView {
     private val image = view.findViewById(R.id.photoImage) as ImageView
     private val title = view.findViewById(R.id.photoTitle) as TextView
 
-    override fun setImage(image: Int) = Picasso.with(this.image.context)
+    override fun setImage(image: Int) = Picasso.get()
             .load(image)
             .fit()
             .centerCrop()

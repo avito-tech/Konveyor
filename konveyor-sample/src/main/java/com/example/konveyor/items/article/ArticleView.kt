@@ -21,7 +21,7 @@ class ArticleViewHolder(view: View) : BaseViewHolder(view), ArticleView {
     private val title = view.findViewById(R.id.articleTitle) as TextView
     private val bodyPreview = view.findViewById(R.id.articleBodyPreview) as TextView
 
-    override fun setImage(@DrawableRes image: Int) = Picasso.with(this.image.context)
+    override fun setImage(@DrawableRes image: Int) = Picasso.get()
             .load(image)
             .fit()
             .centerCrop()

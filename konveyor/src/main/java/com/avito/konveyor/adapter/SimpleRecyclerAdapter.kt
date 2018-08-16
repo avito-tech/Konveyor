@@ -15,7 +15,7 @@ open class SimpleRecyclerAdapter(private val presenter: AdapterPresenter,
 
     private var layoutInflater: LayoutInflater? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder? {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return holderProvider.buildViewHolder(parent, viewType) { inflateView(it, parent) } ?: EmptyViewHolder(parent)
     }
 
@@ -29,8 +29,8 @@ open class SimpleRecyclerAdapter(private val presenter: AdapterPresenter,
 
     override fun getItemId(position: Int) = presenter.getItemId(position)
 
-    override fun onViewRecycled(holder: BaseViewHolder?) {
-        holder?.onUnbind()
+    override fun onViewRecycled(holder: BaseViewHolder) {
+        holder.onUnbind()
     }
 
     private fun inflateView(@LayoutRes layout: Int, parent: ViewGroup): View {
