@@ -128,7 +128,7 @@ class DogBlueprint(override val presenter: ItemPresenter<DogView, Dog>)
  If multiple registered `ItemBlueprint`s respond `true` to a given `Item`, `ViewTypeCollisionException` will be thrown. 
 
 
-## <a name="item-blueprint" />ItemBlueprint
+## <a name="adapter-presenter" />AdapterPresenter
 _AdapterPresenter_ is an abstraction over `RecyclerView.Adapter`, that we can easily use in our unit tests. 
 Current library provides default implementation for this interface - `SimpleAdapterPresenter`, this will satisfy 99.9% of your needs, unless you need something exotic.
 
