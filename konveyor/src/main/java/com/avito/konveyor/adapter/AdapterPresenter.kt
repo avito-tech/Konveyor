@@ -1,6 +1,6 @@
 package com.avito.konveyor.adapter
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import com.avito.konveyor.blueprint.Item
 import com.avito.konveyor.blueprint.ItemView
 import com.avito.konveyor.data_source.DataSource

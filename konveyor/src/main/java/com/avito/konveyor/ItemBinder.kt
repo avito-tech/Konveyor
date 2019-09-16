@@ -1,7 +1,7 @@
 package com.avito.konveyor
 
-import android.support.annotation.VisibleForTesting
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.VisibleForTesting
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import com.avito.konveyor.ItemBinder.Builder

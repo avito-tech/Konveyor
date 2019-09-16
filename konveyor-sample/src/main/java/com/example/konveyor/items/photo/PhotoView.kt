@@ -1,6 +1,6 @@
 package com.example.konveyor.items.photo
 
-import android.support.annotation.DrawableRes
+import androidx.annotation.DrawableRes
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView

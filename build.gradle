@@ -18,7 +18,7 @@ ext {
     sourceCompatibilityVersion = JavaVersion.VERSION_1_7
     targetCompatibilityVersion = JavaVersion.VERSION_1_7
     supportVersion = '28.0.0'
-    kotlinVersion = '1.3.50'
+    androidxVersion = '1.0.0'
 
     dep = [
             kotlin       : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
@@ -30,7 +30,7 @@ ext {
             mockito      : 'org.mockito:mockito-core:2.18.3',
             mockitoKotlin: 'com.nhaarman:mockito-kotlin:1.5.0',
             hamcrest     : 'org.hamcrest:hamcrest-library:1.3',
-            recycler     : "com.android.support:recyclerview-v7:$supportVersion"
+            recycler     : "androidx.recyclerview:recyclerview:$androidxVersion"
     ]
 
 }
