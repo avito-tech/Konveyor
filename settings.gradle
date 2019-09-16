@@ -1,3 +1,4 @@
-rootProject.name = ':konveyor-root'
+rootProject.name = 'konveyor-root'
 
-include ':konveyor', ':konveyor-sample'
+include ':konveyor'
+include ':konveyor-sample'
