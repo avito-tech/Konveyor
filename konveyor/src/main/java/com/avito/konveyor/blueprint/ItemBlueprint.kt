@@ -1,6 +1,6 @@
 package com.avito.konveyor.blueprint
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import com.avito.konveyor.adapter.BaseViewHolder
 import com.avito.konveyor.blueprint.ViewHolderBuilder.ViewHolderProvider
 import com.avito.konveyor.exception.ViewTypeCollisionException

@@ -1,6 +1,6 @@
 package com.avito.konveyor.blueprint
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * Marker interface that represents

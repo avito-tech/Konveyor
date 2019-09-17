@@ -1,9 +1,9 @@
 package com.example.konveyor
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.avito.konveyor.ItemBinder
 import com.avito.konveyor.adapter.SimpleAdapterPresenter
 import com.avito.konveyor.adapter.SimpleRecyclerAdapter
@@ -18,7 +18,7 @@ import com.example.konveyor.items.photo.PhotoPresenter
 
 class MainActivity : AppCompatActivity() {
 
-    private val itemList: RecyclerView by lazy { findViewById(R.id.itemList) as RecyclerView }
+    private val itemList: RecyclerView by lazy { findViewById<RecyclerView>(R.id.itemList) }
     private val dataSource = ListDataSource(listOf(
             Article(1, "Northern Lights", R.string.article_body_preview, R.drawable.article1),
             Photo(1, "Full Moon", R.drawable.photo1),
@@ -47,6 +47,6 @@ class MainActivity : AppCompatActivity() {
         itemList.adapter = SimpleRecyclerAdapter(presenter, binder).apply { setHasStableIds(true) }
 
         presenter.onDataSourceChanged(dataSource)
-        itemList.adapter.notifyDataSetChanged()
+        (itemList.adapter as SimpleRecyclerAdapter).notifyDataSetChanged()
     }
 }

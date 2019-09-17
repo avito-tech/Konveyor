@@ -1,22 +1,24 @@
 package com.avito.konveyor.adapter
 
-import android.support.annotation.LayoutRes
-import android.support.v7.util.ListUpdateCallback
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.LayoutRes
+import androidx.recyclerview.widget.ListUpdateCallback
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.avito.konveyor.blueprint.ViewHolderBuilder
 import java.lang.IllegalStateException
 
-open class SimpleRecyclerAdapter(private val presenter: AdapterPresenter,
-                                 private val holderProvider: ViewHolderBuilder<BaseViewHolder>) :
-        RecyclerView.Adapter<BaseViewHolder>(), ListUpdateCallback {
+open class SimpleRecyclerAdapter(
+        private val presenter: AdapterPresenter,
+        private val holderProvider: ViewHolderBuilder<BaseViewHolder>
+) : RecyclerView.Adapter<BaseViewHolder>(), ListUpdateCallback {
 
     private var layoutInflater: LayoutInflater? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
-        return holderProvider.buildViewHolder(parent, viewType) { inflateView(it, parent) } ?: EmptyViewHolder(parent)
+        return holderProvider.buildViewHolder(parent, viewType) { inflateView(it, parent) }
+                ?: EmptyViewHolder(parent)
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
